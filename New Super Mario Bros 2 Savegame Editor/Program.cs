@@ -15,7 +15,7 @@ namespace New_Super_Mario_Bros_2_Savegame_Editor
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new NSMB2_SGE());
         }
     }
 }

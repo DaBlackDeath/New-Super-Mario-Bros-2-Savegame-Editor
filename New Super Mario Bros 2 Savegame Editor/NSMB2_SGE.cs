@@ -10,14 +10,14 @@ using System.IO;
 
 namespace New_Super_Mario_Bros_2_Savegame_Editor
 {
-    public partial class Form1 : Form
+    public partial class NSMB2_SGE : Form
     {
-        public Form1()
+        public NSMB2_SGE()
         {
             InitializeComponent();
         }
         public string savegame;
-        public int moneyall;
+        
         public static byte[] BLKDTH_StringToByteArray(string hex)
         {
             return Enumerable.Range(0, hex.Length)
@@ -38,7 +38,6 @@ namespace New_Super_Mario_Bros_2_Savegame_Editor
 
         private void BLKDTH_get_data()
         {
-
             {
                 FileStream savegame_fs = new FileStream(savegame, FileMode.Open);
                 BinaryReader savegame_br = new BinaryReader(savegame_fs);
@@ -80,14 +79,13 @@ namespace New_Super_Mario_Bros_2_Savegame_Editor
                 box_file3_coins.Text = (f3c.ToString());
                 savegame_br.Close();
             }
-
         }
         private void BLKDTH_set_data()
         {
             FileStream update_save_open = null;
             BinaryWriter update_save_write = null;
-            update_save_open = new System.IO.FileStream(savegame, System.IO.FileMode.OpenOrCreate);
-            update_save_write = new System.IO.BinaryWriter(update_save_open);
+            update_save_open = new FileStream(savegame, FileMode.OpenOrCreate);
+            update_save_write = new BinaryWriter(update_save_open);
 
             #region data
 
@@ -130,7 +128,7 @@ namespace New_Super_Mario_Bros_2_Savegame_Editor
             update_save_open.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BTN_Load_Click(object sender, EventArgs e)
         {
             BLKDTH_get_openfile();
             if (string.IsNullOrEmpty(savegame))
@@ -143,12 +141,10 @@ namespace New_Super_Mario_Bros_2_Savegame_Editor
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void BTN_Save_Click(object sender, EventArgs e)
         {
             BLKDTH_set_data();
             MessageBox.Show("Data saved");
         }
-
-
     }
 }

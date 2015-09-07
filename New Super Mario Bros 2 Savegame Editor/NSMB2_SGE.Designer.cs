@@ -1,6 +1,6 @@
 ﻿namespace New_Super_Mario_Bros_2_Savegame_Editor
 {
-    partial class Form1
+    partial class NSMB2_SGE
     {
         /// <summary>
         /// Erforderliche Designervariable.
@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.BTN_Load = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.box_file1_coins = new System.Windows.Forms.TextBox();
+            this.box_file1_lives = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.box_file2_coins = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.box_file2_lives = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.box_file1_lives = new System.Windows.Forms.TextBox();
-            this.box_file1_coins = new System.Windows.Forms.TextBox();
-            this.box_file2_coins = new System.Windows.Forms.TextBox();
-            this.box_file2_lives = new System.Windows.Forms.TextBox();
             this.box_file3_coins = new System.Windows.Forms.TextBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.box_file3_lives = new System.Windows.Forms.TextBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.box_money = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BTN_Save = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -59,15 +59,15 @@
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // BTN_Load
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(216, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "load savegame";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.BTN_Load.Location = new System.Drawing.Point(12, 12);
+            this.BTN_Load.Name = "BTN_Load";
+            this.BTN_Load.Size = new System.Drawing.Size(216, 23);
+            this.BTN_Load.TabIndex = 0;
+            this.BTN_Load.Text = "load savegame";
+            this.BTN_Load.UseVisualStyleBackColor = true;
+            this.BTN_Load.Click += new System.EventHandler(this.BTN_Load_Click);
             // 
             // groupBox1
             // 
@@ -81,6 +81,24 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Save File 1";
+            // 
+            // box_file1_coins
+            // 
+            this.box_file1_coins.Location = new System.Drawing.Point(37, 55);
+            this.box_file1_coins.MaxLength = 3;
+            this.box_file1_coins.Name = "box_file1_coins";
+            this.box_file1_coins.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.box_file1_coins.Size = new System.Drawing.Size(55, 20);
+            this.box_file1_coins.TabIndex = 3;
+            // 
+            // box_file1_lives
+            // 
+            this.box_file1_lives.Location = new System.Drawing.Point(37, 24);
+            this.box_file1_lives.MaxLength = 4;
+            this.box_file1_lives.Name = "box_file1_lives";
+            this.box_file1_lives.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.box_file1_lives.Size = new System.Drawing.Size(55, 20);
+            this.box_file1_lives.TabIndex = 2;
             // 
             // pictureBox2
             // 
@@ -115,6 +133,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Save File 2";
             // 
+            // box_file2_coins
+            // 
+            this.box_file2_coins.Location = new System.Drawing.Point(37, 55);
+            this.box_file2_coins.MaxLength = 3;
+            this.box_file2_coins.Name = "box_file2_coins";
+            this.box_file2_coins.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.box_file2_coins.Size = new System.Drawing.Size(55, 20);
+            this.box_file2_coins.TabIndex = 5;
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::New_Super_Mario_Bros_2_Savegame_Editor.Properties.Resources.nsmb2_lives;
@@ -124,6 +151,15 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
+            // 
+            // box_file2_lives
+            // 
+            this.box_file2_lives.Location = new System.Drawing.Point(37, 24);
+            this.box_file2_lives.MaxLength = 4;
+            this.box_file2_lives.Name = "box_file2_lives";
+            this.box_file2_lives.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.box_file2_lives.Size = new System.Drawing.Size(55, 20);
+            this.box_file2_lives.TabIndex = 4;
             // 
             // pictureBox4
             // 
@@ -148,6 +184,15 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Save File 3";
             // 
+            // box_file3_coins
+            // 
+            this.box_file3_coins.Location = new System.Drawing.Point(37, 55);
+            this.box_file3_coins.MaxLength = 3;
+            this.box_file3_coins.Name = "box_file3_coins";
+            this.box_file3_coins.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.box_file3_coins.Size = new System.Drawing.Size(55, 20);
+            this.box_file3_coins.TabIndex = 7;
+            // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::New_Super_Mario_Bros_2_Savegame_Editor.Properties.Resources.nsmb2_lives;
@@ -158,6 +203,15 @@
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
             // 
+            // box_file3_lives
+            // 
+            this.box_file3_lives.Location = new System.Drawing.Point(37, 24);
+            this.box_file3_lives.MaxLength = 4;
+            this.box_file3_lives.Name = "box_file3_lives";
+            this.box_file3_lives.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.box_file3_lives.Size = new System.Drawing.Size(55, 20);
+            this.box_file3_lives.TabIndex = 6;
+            // 
             // pictureBox6
             // 
             this.pictureBox6.Image = global::New_Super_Mario_Bros_2_Savegame_Editor.Properties.Resources.nsmb2_starcoin;
@@ -167,60 +221,6 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
-            // 
-            // box_file1_lives
-            // 
-            this.box_file1_lives.Location = new System.Drawing.Point(37, 24);
-            this.box_file1_lives.MaxLength = 4;
-            this.box_file1_lives.Name = "box_file1_lives";
-            this.box_file1_lives.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.box_file1_lives.Size = new System.Drawing.Size(55, 20);
-            this.box_file1_lives.TabIndex = 2;
-            // 
-            // box_file1_coins
-            // 
-            this.box_file1_coins.Location = new System.Drawing.Point(37, 55);
-            this.box_file1_coins.MaxLength = 3;
-            this.box_file1_coins.Name = "box_file1_coins";
-            this.box_file1_coins.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.box_file1_coins.Size = new System.Drawing.Size(55, 20);
-            this.box_file1_coins.TabIndex = 3;
-            // 
-            // box_file2_coins
-            // 
-            this.box_file2_coins.Location = new System.Drawing.Point(37, 55);
-            this.box_file2_coins.MaxLength = 3;
-            this.box_file2_coins.Name = "box_file2_coins";
-            this.box_file2_coins.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.box_file2_coins.Size = new System.Drawing.Size(55, 20);
-            this.box_file2_coins.TabIndex = 5;
-            // 
-            // box_file2_lives
-            // 
-            this.box_file2_lives.Location = new System.Drawing.Point(37, 24);
-            this.box_file2_lives.MaxLength = 4;
-            this.box_file2_lives.Name = "box_file2_lives";
-            this.box_file2_lives.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.box_file2_lives.Size = new System.Drawing.Size(55, 20);
-            this.box_file2_lives.TabIndex = 4;
-            // 
-            // box_file3_coins
-            // 
-            this.box_file3_coins.Location = new System.Drawing.Point(37, 55);
-            this.box_file3_coins.MaxLength = 3;
-            this.box_file3_coins.Name = "box_file3_coins";
-            this.box_file3_coins.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.box_file3_coins.Size = new System.Drawing.Size(55, 20);
-            this.box_file3_coins.TabIndex = 7;
-            // 
-            // box_file3_lives
-            // 
-            this.box_file3_lives.Location = new System.Drawing.Point(37, 24);
-            this.box_file3_lives.MaxLength = 4;
-            this.box_file3_lives.Name = "box_file3_lives";
-            this.box_file3_lives.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.box_file3_lives.Size = new System.Drawing.Size(55, 20);
-            this.box_file3_lives.TabIndex = 6;
             // 
             // groupBox4
             // 
@@ -240,29 +240,29 @@
             this.box_money.Size = new System.Drawing.Size(86, 20);
             this.box_money.TabIndex = 0;
             // 
-            // button2
+            // BTN_Save
             // 
-            this.button2.Location = new System.Drawing.Point(12, 38);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(215, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "save savegame";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.BTN_Save.Location = new System.Drawing.Point(12, 38);
+            this.BTN_Save.Name = "BTN_Save";
+            this.BTN_Save.Size = new System.Drawing.Size(215, 23);
+            this.BTN_Save.TabIndex = 5;
+            this.BTN_Save.Text = "save savegame";
+            this.BTN_Save.UseVisualStyleBackColor = true;
+            this.BTN_Save.Click += new System.EventHandler(this.BTN_Save_Click);
             // 
-            // Form1
+            // NSMB2_SGE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(239, 255);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.BTN_Save);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BTN_Load);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Form1";
+            this.Name = "NSMB2_SGE";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NSMB2 3DS Editor v1";
             this.groupBox1.ResumeLayout(false);
@@ -285,7 +285,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BTN_Load;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -303,7 +303,7 @@
         private System.Windows.Forms.TextBox box_file3_lives;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.TextBox box_money;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BTN_Save;
     }
 }
 
